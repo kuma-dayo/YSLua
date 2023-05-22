@@ -2744,12 +2744,10 @@ function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2)
   L8_2 = L8_2()
   if L8_2 == false then
     if A7_2 then
-      L8_2 = CS
-      L8_2 = L8_2.MoleMole
-      L8_2 = L8_2.SuperDebug
-      L8_2 = L8_2.LogError
-      L9_2 = "NarratorTask call second."
-      L8_2(L9_2)
+      L9_2 = A0_2
+      L8_2 = A0_2.LogError
+      L10_2 = "NarratorTask call second."
+      L8_2(L9_2, L10_2)
       L8_2 = nil
       return L8_2
     end
@@ -2984,12 +2982,10 @@ function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2)
   L5_2 = L5_2()
   if L5_2 == false then
     if A4_2 then
-      L5_2 = CS
-      L5_2 = L5_2.MoleMole
-      L5_2 = L5_2.SuperDebug
-      L5_2 = L5_2.LogError
-      L6_2 = "NarratorOnlyTask call second."
-      L5_2(L6_2)
+      L6_2 = A0_2
+      L5_2 = A0_2.LogError
+      L7_2 = "NarratorOnlyTask call second."
+      L5_2(L6_2, L7_2)
       L5_2 = nil
       return L5_2
     end
@@ -3222,12 +3218,10 @@ function L1_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2, A7_2)
     end
   else
     if A6_2 then
-      L8_2 = CS
-      L8_2 = L8_2.MoleMole
-      L8_2 = L8_2.SuperDebug
-      L8_2 = L8_2.LogError
-      L9_2 = "NarratorOnlyTaskByData call second."
-      L8_2(L9_2)
+      L9_2 = A0_2
+      L8_2 = A0_2.LogError
+      L10_2 = "NarratorOnlyTaskByData call second."
+      L8_2(L9_2, L10_2)
       return
     end
     L9_2 = A0_2
@@ -4476,6 +4470,83 @@ function L2_1(A0_2, A1_2, A2_2)
   else
     return A2_2
   end
+end
+L0_1[L1_1] = L2_1
+L1_1 = "Log"
+function L2_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = actorUtils
+  L2_2 = L2_2.Log
+  L3_2 = A1_2
+  L2_2(L3_2)
+end
+L0_1[L1_1] = L2_1
+L1_1 = "LogError"
+function L2_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = actorUtils
+  L2_2 = L2_2.LogError
+  L3_2 = A1_2
+  L2_2(L3_2)
+end
+L0_1[L1_1] = L2_1
+L1_1 = "LogWarning"
+function L2_1(A0_2, A1_2)
+  local L2_2, L3_2
+  L2_2 = actorUtils
+  L2_2 = L2_2.LogWarning
+  L3_2 = A1_2
+  L2_2(L3_2)
+end
+L0_1[L1_1] = L2_1
+L1_1 = "VeryImportantError"
+function L2_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2, A6_2)
+  local L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2
+  if A2_2 == nil then
+    A2_2 = 1
+  end
+  if A3_2 == nil then
+    A3_2 = 19
+  end
+  if A4_2 == nil then
+    A4_2 = ""
+  end
+  if A5_2 == nil then
+    A5_2 = true
+  end
+  if A6_2 == nil then
+    A6_2 = ""
+  end
+  L7_2 = 0
+  L8_2 = 0
+  L9_2 = actorUtils
+  L9_2 = L9_2.VeryImportantError
+  L10_2 = A1_2
+  L11_2 = A2_2
+  L12_2 = A3_2
+  L13_2 = A4_2
+  L14_2 = A5_2
+  L15_2 = L7_2
+  L16_2 = L8_2
+  L17_2 = A6_2
+  L9_2(L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2)
+end
+L0_1[L1_1] = L2_1
+L1_1 = "VeryImportantWarning"
+function L2_1(A0_2, A1_2, A2_2, A3_2)
+  local L4_2, L5_2, L6_2, L7_2
+  if A2_2 == nil then
+    A2_2 = true
+  end
+  if A3_2 == nil then
+    A3_2 = true
+  end
+  L4_2 = actorUtils
+  L4_2 = L4_2.VeryImportantWarning
+  L5_2 = A1_2
+  L6_2 = A2_2
+  L7_2 = A3_2
+  L4_2(L5_2, L6_2, L7_2)
 end
 L0_1[L1_1] = L2_1
 L1_1 = "DeployStory"
